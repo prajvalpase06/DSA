@@ -2,22 +2,24 @@
 using namespace std;
 
 struct node
+{
+    int data;
+    struct node *next;
+
+    node(int x)
     {
-        int data;
-        struct node* next;
-    
-        node(int x){
-            data = x;
-            next = NULL;
-        }
-    
-    }*head;
+        data = x;
+        next = NULL;
+    }
 
+} * head;
 
-node* reverse(node* head){
+node *reverse(node *head)
+{
     node *Curr = head, *prev = NULL, *n;
 
-    while(Curr){
+    while (Curr)
+    {
         n = Curr->next;
         Curr->next = prev;
 
