@@ -16,21 +16,21 @@ public:
     }
 };
 
-class Solution {
-public:
-    void moveZeroes(vector<int>& nums) {
-        queue<int> q;
-        int c=0;
-        for(auto n:nums){
-            if(n != 0) q.push(n);
-            else c++;
-        }
+// class Solution {
+// public:
+//     void moveZeroes(vector<int>& nums) {
+//         queue<int> q;
+//         int c=0;
+//         for(auto n:nums){
+//             if(n != 0) q.push(n);
+//             else c++;
+//         }
         
-        while(c--) q.push(0);
-        int k=0;
-        while(!q.empty()){
-            nums[k++] = q.front();
-            q.pop();
-        }
-    }
-};
+//         while(c--) q.push(0);
+//         int k=0;
+//         while(!q.empty()){
+//             nums[k++] = q.front();
+//             q.pop();
+//         }
+//     }
+// };

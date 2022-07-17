@@ -18,7 +18,7 @@ public:
         if (!s || !t)
             return false;
 
-        if (s->val != s->val)
+        if (s->val != t->val)
             return false;
 
         return isSame(s->left, t->left) && isSame(s->right, t->right);
